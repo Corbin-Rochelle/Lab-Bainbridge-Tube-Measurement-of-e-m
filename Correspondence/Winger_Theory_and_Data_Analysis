@@ -1,0 +1,7 @@
+Dear Corbin,
+
+    For your spreadsheet I only have a few comments.  This is more of just something to make it easier to make changes, but since all the sigma values are the same you should put the common value in a single cell and then just reference it in the cells in Column D.  It the long term, it would also help if you set the cell format to be the same for the value and sigma.  Column E is not necessary and was only in the video to show the variation in values.  You also do not have percentages since you did not specify the proper numerical format.  Columns H, I, and J are all good, as are the values for the sums, average, degrees of freedom, and the reduced chi square.  Unfortunately, you do not clearly indicate the uncertainty in the average.  The value you label as “Scale” is the standard deviation for an unweighted average which would be the uncertainty in the measurements.  The “Uncertainty” is the standard deviation of the mean which we do need to discuss further.
+
+Sincerely,
+
+Prof. Winger
