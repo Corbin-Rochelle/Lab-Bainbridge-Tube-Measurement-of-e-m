@@ -1,0 +1,162 @@
+\documentclass[aps,prl,10pt,twocolumn,floatfix]{revtex4-2}
+\usepackage{chngpage}
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\newcolumntype{d}{D{.}{.}{-1}}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage[version=3]{mhchem}
+\usepackage{graphicx}
+\usepackage{esvect}
+\usepackage{circuitikz}
+\usepackage{physics}
+
+\begin{document}
+
+\title{Lab \#1: Bainbridge Tube Measurement of E/M}
+\author{Corbin T. Rochelle (ctr233)}
+\date{\today}
+\affiliation{Department of Physics and Astronomy\\Mississippi State University\\Mississippi State, MS 39762-5167}
+\date{\today}
+
+\maketitle
+
+\section{Introduction}\label{Intro}
+
+The purpose of the Bainbridge Experiment is to experimentally discover the mass to charge ratio of the electron experimentally. 
+This is done by measuring the arc diameter of traveling electrons in a magnetic field. [Lab Manuel]
+The distance of the arc diameter in the vacuum tube shows how the charged electrons where affected by the magnetic fields created by the Hemholtz coils to change its momentum, thus giving a value for the charge to mass ratio of the electron. 
+
+In 1897, J.J. Thomson released him paper about cathode ray tubes.
+In his paper, he said that the ``unanimous opinion of German physicists [agree] they are due to some process in the aether." [Cathode Rays]
+This aether, a popular theory at the time for explaining how information could travel through vacuums, was laid as an explanation for the bending of the electrons shot from the filament in cathode ray tubes.
+However, in his paper, J.J. Thomson relays that people should examine the electron, not as a particle manipulated by the aether, but as a charged particle in its own right. 
+In the latter sections of his paper he conducted experiments ``to test some of the consequences of the electrified-particle theory." [Cathode Rays]
+
+Thomson concluded throughout his experimentation that the m/e ratio was about $1.3\cdot 10^{-7}$, which is orders of magnitude off from the proper value we know today, which is $5.7\cdot 10^{-12}$.
+He concluded that ``the smallness of m/e may be due to the smallness of m or the largeness of e, or to a combination
+of these two;"
+although he knew his experimental data to not know the true m/e ratio, due to the variance in his data, he correctly concluded that ``that its value is very small compared with the value, which is... the value for the hydrogen ion in electrolysis." [Cathode Rays]
+Thomson came back later in 1913 and ran another experiment where he found a closer approximation to our current e/m amount [Wikipedia].
+
+Bainbridge came around in 1938 and created the Bainbridge Tube Measurement of E/M, which was not originally designed for scientists to use, but for students to use to get use to labs and experimental procedure. [Bainbridge]
+A version of his experiment is what this lab report is based on. 
+
+
+\section{Theory}\label{Theory}
+
+\subsection{Preparing the Experiment}
+% Set up
+Setting up the Bainbridge Experiment is one of the most important steps in this entire experiment. 
+There are two important steps: aligning parallel to the Earth's magnetic field and getting the bulb rotated.
+
+% electric field
+There are two steps involved in aligning to Earth's magnetic field, that is aligning on our x-y axis first, and then on our z.
+To align the x-y axis, firstly we make sure the Bainbridge apparatus is placed on a table and a compass is placed in near proximity to the device. 
+Using the compass, orient the bulb's ends along the magnetic field lines.
+Next, rotate the compass or use a compass for the z-axis, to align the vertical component of the Bainbridge apparatus with the Earth's magnetic field. 
+Align the vertical component of the apparatus with Earth's magnetic field. 
+We have done both of these alignments because we want no interference by the Earth's magnetic field on the measurement and aligning parallel to the Earth's field is one way of doing that.  
+
+% bulb rotation
+The last piece of setup needed to successfully complete the Bainbridge Experiment is correctly aligning the bulb, which allows the two Hemholtz coils to create a perfectly perpendicular magnetic field, as to create a circle instead of a helix. 
+\subsection{Derivation of e/m}
+% Derivation of EQ1
+Th most important equation to determine the mass to charge ratio of the electron is:
+\begin{equation}
+\frac{e}{m}=\frac{2V_{acc}}{r^2B^2}
+\end{equation}
+Since it is such an important equation I will now derive where it comes from. \\
+We begin with the Lorentz force:
+\begin{equation}
+\va{F}=q(\va{E}+\va{v}\times \va{B})
+\end{equation}
+Since we know the electric current is not applied to the electrons E goes to 0, meaning the new equation is:
+\begin{equation*}
+\va{F}=q(\va{v}\times \va{B})
+\end{equation*}
+Now I will introduce a second equation, the one for the centripetal force, given by:
+\begin{equation*}
+\va{F}=m\frac{\va{v}^2}{r}
+\end{equation*}
+Let us equate the two equations to create a new one:
+\begin{equation}
+q(\va{v}\times \va{B})=m\frac{\va{v}^2}{r}
+\end{equation}
+We know by the set up of this experiment that the magnetic field generated by the two rings of current is perpendicular to the circle made by the path of the electrons, so $\va{v}\times \va{B}=vB$.
+We can now include this and solve for the velocity in equation 3.
+\begin{equation}
+v=\frac{qBr}{m}
+\end{equation}
+Let us introduce the last needed equation, that of kinetic energy in relation to electron volts. 
+\begin{equation}
+\frac{1}{2}mv^2=eV
+\end{equation}
+Lets plug in for velocity:
+\begin{equation*}
+\frac{1}{2}m(\frac{qBr}{m})^2=eV
+\end{equation*}
+And now rearrange to get the final expression:
+\begin{equation}
+\frac{e}{m}=\frac{2V_{acc}}{r^2B^2}
+\end{equation}
+We see that equations 1 and 6 are the same!
+
+\subsection{Linearlization of the Equations}
+% Linearization of Eq1 and 2
+Starting with the equation for the charge to mass ratio:
+\begin{equation}
+\frac{e}{m}=\frac{2V_{acc}}{r^2B^2}
+\end{equation}
+and the equation for the magnetic fields of the apparatus and the Earth: 
+\begin{equation}
+B=B_0I-B_E
+\end{equation}
+Plugging the second equation in for the first, we get:
+\begin{equation*}
+\frac{e}{m}=\frac{2V_{acc}}{r^2(B_0I-B_E)^2}
+\end{equation*}
+Since the dependent variable we are looking for is the current (I), we will solve for that:
+\begin{equation*}
+I=\frac{\sqrt{2mV_{acc}}}{rB_0\sqrt{e}}+\frac{B_E}{B_0}
+\end{equation*}
+This form is correct analytically;
+however, this does not show the independent variables very well.
+The independent variables, the things we changed and fixed, were the radii and the $V_{acc}$. 
+In light of this, let us separate this equation into y=mx+b form, giving us:
+\begin{equation}
+I=\frac{\sqrt{2m}}{B_0\sqrt{e}}\cdot \frac{\sqrt{V_{acc}}}{r}+\frac{B_E}{B_0}
+\end{equation}
+Now, in this final equation, we can clearly see which variables are the independent and dependent variables. 
+\subsection{Questions}
+% Answering Questions 
+Which part of the beam should hit the post? I.e., what is the effect on the beam of hitting the gas
+molecules in the tube?\\
+The part of the beam that should hit the post is the very outer edge because this is the part of the beam that carries the most energy, most closely approximating the energy the entire beam had at its inception. 
+This is because the beam of light created before the post is using the outer, brightest electrons, which when imparting their energy on the Mercury gas, lose some of their initial energy and fall into the middle of the beam. 
+Since the electrons that have shone the brightest have lost some initial energy we do not want to use these in our calculations, so we use the new fresh outer electrons at the post. 
+
+How do maximize the range over which data can be taken? What are the experimental conditions that
+set the minimum and maximum data point?\\
+We maximize and minimize the range over which data can be taken by varying the voltage of $V_{acc}$, this moves the beam in and out with respect to the posts inside the glass tube. 
+The experimental conditions that set the minimum and maximum data points in this experiment are the posts in the glass tube. 
+They give a frame of reference for which to measure the radius of the beam of electrons. 
+
+What is the optimal way to analyze the data set so that all data points are treated properly?\\
+The optimal way to analyze the data set so that all of the data is analyzed properly is to linearize the data set and then use a linear regression to find the relation between data points. 
+This is because linear plots are much easier to analyze to check for relations when compared to other types of relations. 
+
+\section{Data}\label{Data}
+
+
+\section{Analysis and Discussion}
+
+
+\section{Questions}
+
+
+\section{Conclusion}
+
+
+	
+\end{document} 
