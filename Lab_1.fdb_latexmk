@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex Lab_1"] 1645053975 "Lab_1.aux" "Lab_1.bbl" "Lab_1" 1645053994
+["bibtex Lab_1"] 1645060629 "Lab_1.aux" "Lab_1.bbl" "Lab_1" 1645060630
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Lab_1.aux" 1645053976 983 1403768ce522b5a21e3b5a792c9caa1b "pdflatex"
-  "Lab_1Notes.bib" 1645053976 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Lab_1.aux" 1645060630 1195 19022adf0b0bfa1d136f66496178ca8c "pdflatex"
+  "Lab_1Notes.bib" 1645060630 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
-  "Lab_1.blg"
   "Lab_1.bbl"
-["pdflatex"] 1645053975 "/Users/corbin/Documents/GitHub/Lab-1-Bainbridge/Lab_1.tex" "Lab_1.pdf" "Lab_1" 1645053994
-  "/Users/corbin/Documents/GitHub/Lab-1-Bainbridge/Lab_1.tex" 1645052989 9208 8b432df303736c4fd3749744d766b475 ""
+  "Lab_1.blg"
+["pdflatex"] 1645060629 "/Users/corbin/Documents/GitHub/Lab-1-Bainbridge/Lab_1.tex" "Lab_1.pdf" "Lab_1" 1645060630
+  "/Users/corbin/Documents/GitHub/Lab-1-Bainbridge/Lab_1.tex" 1645060628 9720 ca84dc8eb5882836dd4d6ec2353eb395 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -159,11 +159,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1637181772 4363830 115bf83999b1c6fe42fcb49e6fa843f4 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1637181800 2819429 86e693597574a6e7a64545fb9ad2a693 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "Lab_1.aux" 1645053976 983 1403768ce522b5a21e3b5a792c9caa1b "pdflatex"
-  "Lab_1.bbl" 1645053975 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Lab_1"
-  "Lab_1.tex" 1645052989 9208 8b432df303736c4fd3749744d766b475 ""
+  "Lab_1.aux" 1645060630 1195 19022adf0b0bfa1d136f66496178ca8c "pdflatex"
+  "Lab_1.bbl" 1645060629 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Lab_1"
+  "Lab_1.tex" 1645060628 9720 ca84dc8eb5882836dd4d6ec2353eb395 ""
   (generated)
-  "Lab_1.log"
   "Lab_1.aux"
   "Lab_1.pdf"
   "Lab_1Notes.bib"
+  "Lab_1.log"
