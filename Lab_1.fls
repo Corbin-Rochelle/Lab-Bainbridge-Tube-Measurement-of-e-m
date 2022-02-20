@@ -626,6 +626,11 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 OUTPUT Lab_1.pdf
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./data_plot.png
+INPUT ./data_plot.png
+INPUT data_plot.png
+INPUT ./data_plot.png
+INPUT ./data_plot.png
 INPUT ./Lab_1.bbl
 INPUT Lab_1.bbl
 INPUT ./Lab_1.bbl
