@@ -11,6 +11,8 @@
 \usepackage{circuitikz}
 \usepackage{physics}
 
+\bibliographystyle{apsrev4-2}
+
 
 \begin{document}
 
@@ -37,21 +39,21 @@ This is done by observing a beam of electrons as they travel in an arc due to th
 The diameter of the arc observed in the vacuum tube depends on how the charged electrons where affected by the magnetic field produced by a pair of Helmholtz coils to change its momentum.
 By measuring the current in the Helmholtz coils to bend the electron beam to known diameters for a set acceleration voltages, the charge-to-mass ratio of the electron can be determined as will be shown later.
 
-In 1897, J.J.~Thomson published a paper covering his experiments with cathode rays. 
-In his paper, Thomson stated that the ``unanimous opinion of German physicists [is that] they are due to some process in the aether." [Cathode Rays]
+In 1897, J.J.~Thomson published a paper covering his experiments with cathode rays.
+In his paper, Thomson stated that the ``unanimous opinion of German physicists [is that] they are due to some process in the aether" \cite{CathodeRays}.
 This aether, one popular theory at the time for explaining how information could travel through vacuum, was laid as an explanation for the bending of the cathode rays shot from the filament in cathode ray tubes due to the magnetic field.
 However, in his paper, J.J.~Thomson relays that people should examine the possibility of an unknown negatively charged particle, not as a ray manipulated by the aether.
-In the latter sections of his paper he presented results from his experiments ``to test some of the consequences of the electrified-particle theory." [Cathode Rays]
+In the latter sections of his paper he presented results from his experiments ``to test some of the consequences of the electrified-particle theory" \cite{CathodeRays}.
 
 Thomson concluded through his experimentation that the $m/e$ ratio's average was  $1.29(17)\!\times\!10^{-7} kg/C$, which is in the units that he used at the time, which are different from the units used today.
 He concluded that ``the smallness of m/e may be due to the smallness of m or the largeness of e, or to a combination
 of these two;"
-although he knew his experimental data to not know the true $m/e$ ratio, due to the variance in his data, he correctly concluded that ``its value is very small compared with the value, which is\ldots the value for the hydrogen ion in electrolysis." [Cathode Rays]
-Thomson came back later in 1913 and ran another experiment where he found a closer approximation to our current e/m amount [Wikipedia].
+although he knew his experimental data to not know the true $m/e$ ratio, due to the variance in his data, he correctly concluded that ``its value is very small compared with the value, which is\ldots the value for the hydrogen ion in electrolysis" \cite{CathodeRays}.
+Thomson came back later in 1913 and ran another experiment where he found a closer approximation to our current e/m amount \cite{Wiki}.
 
-Kenneth Bainbridge was a scientist in the 20th century who, among other things, created the device students use in this lab while he was at Harvard. [Bainbridge]
-He published this lab in \textit{The Physics Laboratories}, entitled \textit{The Specific Charge of an Electron}. [Bainbridge]
-Bainbridge, in 1938, developed what we now know today as the Bainbridge Tube Measurement of $e/m$, which was not originally designed for scientists to use, but for students to use to develop skills for labs and experimental procedure. [Bainbridge]
+Kenneth Bainbridge was a scientist in the 20th century who, among other things, created the device students use in this lab while he was at Harvard \cite{Bainbridge}.
+He published this lab in \textit{The Physics Laboratories}, entitled \textit{The Specific Charge of an Electron} \cite{Bainbridge}.
+Bainbridge, in 1938, developed what we now know today as the Bainbridge Tube Measurement of $e/m$, which was not originally designed for scientists to use, but for students to use to develop skills for labs and experimental procedure \cite{Bainbridge}.
 A version of his experiment is the basis for this lab report.
 
 
@@ -77,16 +79,16 @@ Now we introduce a second equation, the one for the centripetal force, given by
 \end{equation*}
 We know that both of the these forces are causing circular motion.
 So we conclude that these forces must be related to each other;
-therefore we use Newton's Second Law of Motion to obtain 
+therefore we use Newton's Second Law of Motion to obtain
 \begin{equation}\label{apples}
 q(\va{v}\times \va{B})=m\frac{\va{v}^2}{r}
 \end{equation}
 Here we want to massively simplify the problem through the setup of the experiment, with the goal of representing $\va{v}\times \va{B}$ as $vB$.
-The first choice is to use the Helmholtz coils instead of the anything else to create the magnetic field due to the stability and uniformity of the field the coils create. 
-We want the magnetic field to be constant throughout the vacuum, and this creates that. 
+The first choice is to use the Helmholtz coils instead of the anything else to create the magnetic field due to the stability and uniformity of the field the coils create.
+We want the magnetic field to be constant throughout the vacuum, and this creates that.
 We then have to consider that the magnetic field created by the Helmholtz coils is not the only $\va{B}$ field present.
-We also must account for the Earth's magnetic field, which can easily be eliminated. 
-We do this by orienting the experiment in a specific vertical and horizontal orientation that aligns with Earth's $\va{B}$ field so we can negate its affects. 
+We also must account for the Earth's magnetic field, which can easily be eliminated.
+We do this by orienting the experiment in a specific vertical and horizontal orientation that aligns with Earth's $\va{B}$ field so we can negate its affects.
 We can now include these adjustments to the experiment and solve for the velocity in equation \ref{apples} to obtain
 \begin{equation}\label{oranges}
 v=\frac{qBr}{m}
@@ -137,21 +139,21 @@ The minimum voltage is set by the fact you need to be able to see the beam at th
 What is the optimal way to analyze the data set so that all data points are treated properly?\\
 The optimal way to analyze the data set so that all of the data is analyzed properly is to linearize the data set and then use a linear regression to find the relation between data points.
 This is because linear plots are much easier to analyze to check for relations when compared to other types of relations.
-Another thing to keep track of are the systematic uncertainties due to the way the experiment was preformed. 
+Another thing to keep track of are the systematic uncertainties due to the way the experiment was preformed.
 
 \section{Experiment}
 % about device
 The device we used for this experiment was the Bainbridge tube.
 The basics of the device are two Helmholtz coils, a glass tube filled with mercury gas, and an anode that electrons are shot from.
 Once connected to a power supply, and set to the correct amperage and voltage, electrons will be shot from the anode and make a loop, because of the Lorentz force.
-The electrons, traveling in the tube, will collide with the mercury gas, imparting energy to it, lighting it up. 
+The electrons, traveling in the tube, will collide with the mercury gas, imparting energy to it, lighting it up.
 Figure \ref{bain} gives a less theoretical, more applicable interpretation of the construction of the Bainbridge Apparatus.
 \begin{figure}\label{bain}
     \includegraphics[width=230px]{bain.jpeg}
     \caption{A Picture of the Bainbridge Apparatus}
 \end{figure}
 % what you did
-The data collection was broken up among eight different groups of two students. 
+The data collection was broken up among eight different groups of two students.
 Each group was assigned two acceleration voltages and each group member recorded the current it took to reach each post at that given voltage for the other.
 After collecting all of the data, the post measurements were found in the Bainbridge lab manual and data analysis could begin.
 % Set up
@@ -165,10 +167,10 @@ Next, the dip needle was rotated into a vertical orientation and the North end o
 This alignment was performed to satisfy the requirements for the net magnetic field as descried in theory section.
 % bulb rotation
 The last step in alignment of the setup was to rotate the bulb so that the election beam was perfectly perpendicular to the magnetic field of the Helmholtz coils, as to create a circle instead of a helix.
-This is important so that the beam of electrons hits the posts exactly at the perpendicular angle as to get rid of all energy lost due to motion in the y direction. 
+This is important so that the beam of electrons hits the posts exactly at the perpendicular angle as to get rid of all energy lost due to motion in the y direction.
 %observations
 During the experiment, we observed exactly what we thought would happen, the Helmholtz coils induced a curl in the electron beam, that excited the mercury gas.
-With the lights off, we could clearly see a ring of electrons illuminating the gas. 
+With the lights off, we could clearly see a ring of electrons illuminating the gas.
 
 
 \section{Data Analysis}
@@ -176,18 +178,32 @@ With the lights off, we could clearly see a ring of electrons illuminating the g
 For this data analysis, we used a linear regression using Gaussian statistics, specifically Chi-Squared Minimization.
 
 %Figure
-\begin{figure}[h]
+\begin{figure}
     \includegraphics[width=230px]{data_plot.png}
     \caption{A Plot of Current vs the Square Root of Acceleration Voltage Over Radius}
 \end{figure}
+
 %e/m ratio from data
-To find the charge-to-mass ratio of the electrons, we simply use Equation \ref{pears}, along 
+To find the charge-to-mass ratio of the electrons, we simply use Equation \ref{pears}, along with the equation for the magnetic field, given by
+\begin{equation}
+	\va{B_0}=\frac{8\mu_0N}{\sqrt{125}a}
+\end{equation}
+where $\mu_0$, $N$, and $a$ are all constants given as $1.256637\frac{\mu m\cdot kg}{s^2A^2}$, 72, and $0.3317m$ respectively.
+We then plug this value of $B_0$ into
+\begin{equation}
+	\frac{e}{m}=\frac{2}{(a_0B_0)^2}
+\end{equation}
+
+
 
 \section{Conclusion}
 % how does it compare to current science
 
-
-\section{Works Cited}
-
+\begin{thebibliography}{9}
+\bibitem{WingerBain} J. ~Winger, \textit{Bainbridge Tube Measurement of e/m}, (Mississippi State University).
+\bibitem{CathodeRays} J. J. ~Thomson, \textit{Cathode Rays}, (Philosophical Magazine, 1897).
+\bibitem{Wiki} J.J. ~Thomson, \textit{Rays of Positive Electricity}, (Proceedings of the Royl Society, 1913).
+\bibitem{Bainbridge} K. T. ~Bainbridge, \textit{The Specific Charge of the Electron}, (American Journal of Physics, 1938).
+\end{thebibliography}
 
 \end{document}
