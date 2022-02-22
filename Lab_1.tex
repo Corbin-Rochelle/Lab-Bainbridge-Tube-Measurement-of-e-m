@@ -11,11 +11,12 @@
 \usepackage{circuitikz}
 \usepackage{physics}
 
+
 \begin{document}
 
 \begin{abstract}
 %What is the motivation?
-%What did you do?
+%What did you   do?
 %What were the results?
 %Conclusion
 \end{abstract}
@@ -32,7 +33,7 @@
 \section{Introduction}\label{Intro}
 
 The purpose of the Bainbridge Experiment is to experimentally determine the charge-to-mass ratio of the electron.
-This is done by observing a beam of electrons as they travel in an arc due to the presence of a magnetic field. [Lab Manual]
+This is done by observing a beam of electrons as they travel in an arc due to the presence of a magnetic field\cite{WingerBain}.
 The diameter of the arc observed in the vacuum tube depends on how the charged electrons where affected by the magnetic field produced by a pair of Helmholtz coils to change its momentum.
 By measuring the current in the Helmholtz coils to bend the electron beam to known diameters for a set acceleration voltages, the charge-to-mass ratio of the electron can be determined as will be shown later.
 
@@ -80,13 +81,13 @@ therefore we use Newton's Second Law of Motion to obtain
 \begin{equation}\label{apples}
 q(\va{v}\times \va{B})=m\frac{\va{v}^2}{r}
 \end{equation}
-Here we want to massivly simplfy the problem through the setup of the experiment, with the goal of representing $\va{v}\times \va{B}$ as $vB$.
+Here we want to massively simplify the problem through the setup of the experiment, with the goal of representing $\va{v}\times \va{B}$ as $vB$.
 The first choice is to use the Helmholtz coils instead of the anything else to create the magnetic field due to the stability and uniformity of the field the coils create. 
 We want the magnetic field to be constant throughout the vacuum, and this creates that. 
 We then have to consider that the magnetic field created by the Helmholtz coils is not the only $\va{B}$ field present.
 We also must account for the Earth's magnetic field, which can easily be eliminated. 
-We do this by orienting the experiement in a specific vertical and horozonatal orientation that aligns with Earth's $\va{B}$ field so we can negate its affects. 
-We can now include these adjustments to the experiement and solve for the velocity in equation \ref{apples} to obtain
+We do this by orienting the experiment in a specific vertical and horizontal orientation that aligns with Earth's $\va{B}$ field so we can negate its affects. 
+We can now include these adjustments to the experiment and solve for the velocity in equation \ref{apples} to obtain
 \begin{equation}\label{oranges}
 v=\frac{qBr}{m}
 \end{equation}
@@ -94,7 +95,7 @@ Let us introduce the last needed equation, that for the kinetic energy of the el
 \begin{equation}
 \frac{1}{2}mv^2=eV
 \end{equation}
-Substituting the velocity derived in equation \ref{oranges} yeilds
+Substituting the velocity derived in equation \ref{oranges} yields
 \begin{equation*}
 \frac{1}{2}m(\frac{qBr}{m})^2=eV
 \end{equation*}
@@ -131,17 +132,28 @@ set the minimum and maximum data point?\\
 We maximize and minimize the range over which data can be taken by varying the voltage of $V_{acc}$, this moves the beam in and out with respect to the posts inside the glass tube.
 The experimental conditions that set the minimum and maximum data points in this experiment are the posts in the glass tube.
 They give a frame of reference for which to measure the radius of the beam of electrons.
-The minimum voltage is set by the fact you need to be able to see the beam at the farthest point in order to obtain the bending current, At lower acceleration voltagfes, the beam may not reach the post or the path is too dim to observe. For the maximum voltage, there is a limit set by the macimum current which cna be sent through the Helmholtz coils to bend the beam to the first post.
+The minimum voltage is set by the fact you need to be able to see the beam at the farthest point in order to obtain the bending current, At lower acceleration voltages, the beam may not reach the post or the path is too dim to observe. For the maximum voltage, there is a limit set by the maximum current which cna be sent through the Helmholtz coils to bend the beam to the first post.
 
 What is the optimal way to analyze the data set so that all data points are treated properly?\\
 The optimal way to analyze the data set so that all of the data is analyzed properly is to linearize the data set and then use a linear regression to find the relation between data points.
 This is because linear plots are much easier to analyze to check for relations when compared to other types of relations.
-Another thing to keep track of are the systematic uncertianities due to the way the experiment was preformed. 
+Another thing to keep track of are the systematic uncertainties due to the way the experiment was preformed. 
 
 \section{Experiment}
 % about device
-
+The device we used for this experiment was the Bainbridge tube.
+The basics of the device are two Helmholtz coils, a glass tube filled with mercury gas, and an anode that electrons are shot from.
+Once connected to a power supply, and set to the correct amperage and voltage, electrons will be shot from the anode and make a loop, because of the Lorentz force.
+The electrons, traveling in the tube, will collide with the mercury gas, imparting energy to it, lighting it up. 
+Figure \ref{bain} gives a less theoretical, more applicable interpretation of the construction of the Bainbridge Apparatus.
+\begin{figure}\label{bain}
+    \includegraphics[width=230px]{bain.jpeg}
+    \caption{A Picture of the Bainbridge Apparatus}
+\end{figure}
 % what you did
+The data collection was broken up among eight different groups of two students. 
+Each group was assigned two acceleration voltages and each group member recorded the current it took to reach each post at that given voltage for the other.
+After collecting all of the data, the post measurements were found in the Bainbridge lab manual and data analysis could begin.
 % Set up
 Setting up the Bainbridge Experiment was one of the most important steps in this entire experiment.
 There were two important steps: aligning parallel to the Earth's magnetic field and getting the bulb rotated.
@@ -153,27 +165,29 @@ Next, the dip needle was rotated into a vertical orientation and the North end o
 This alignment was performed to satisfy the requirements for the net magnetic field as descried in theory section.
 % bulb rotation
 The last step in alignment of the setup was to rotate the bulb so that the election beam was perfectly perpendicular to the magnetic field of the Helmholtz coils, as to create a circle instead of a helix.
-This is important so that the beam of electrons hits the posts excatly at the perpendicular angle as to get rid of all energy lost due to motion in the y direction. 
-%oberservations
+This is important so that the beam of electrons hits the posts exactly at the perpendicular angle as to get rid of all energy lost due to motion in the y direction. 
+%observations
+During the experiment, we observed exactly what we thought would happen, the Helmholtz coils induced a curl in the electron beam, that excited the mercury gas.
+With the lights off, we could clearly see a ring of electrons illuminating the gas. 
 
 
 \section{Data Analysis}
-%how data was done
-The data collection was broken up among eight different groups of two students. 
-Each group was assigned two acceleration voltages and each group member recorded the current it took to reach each post at that given voltage for the other.
-After collecting all of the data, the post measurements were found in the Bainbridge lab manual and data analysis could begin.
-
-
 %Data
+For this data analysis, we used a linear regression using Gaussian statistics, specifically Chi-Squared Minimization.
+
 %Figure
-\begin{figure}
+\begin{figure}[h]
     \includegraphics[width=230px]{data_plot.png}
     \caption{A Plot of Current vs the Square Root of Acceleration Voltage Over Radius}
 \end{figure}
 %e/m ratio from data
+To find the charge-to-mass ratio of the electrons, we simply use Equation \ref{pears}, along 
 
 \section{Conclusion}
 % how does it compare to current science
+
+
+\section{Works Cited}
 
 
 \end{document}
