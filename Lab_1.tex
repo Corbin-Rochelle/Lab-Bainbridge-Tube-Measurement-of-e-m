@@ -134,7 +134,7 @@ set the minimum and maximum data point?\\
 We maximize and minimize the range over which data can be taken by varying the voltage of $V_{acc}$, this moves the beam in and out with respect to the posts inside the glass tube.
 The experimental conditions that set the minimum and maximum data points in this experiment are the posts in the glass tube.
 They give a frame of reference for which to measure the radius of the beam of electrons.
-The minimum voltage is set by the fact you need to be able to see the beam at the farthest point in order to obtain the bending current, At lower acceleration voltages, the beam may not reach the post or the path is too dim to observe. For the maximum voltage, there is a limit set by the maximum current which cna be sent through the Helmholtz coils to bend the beam to the first post.
+The minimum voltage is set by the fact you need to be able to see the beam at the farthest point in order to obtain the bending current, At lower acceleration voltages, the beam may not reach the post or the path is too dim to observe. For the maximum voltage, there is a limit set by the maximum current which can be sent through the Helmholtz coils to bend the beam to the first post.
 
 What is the optimal way to analyze the data set so that all data points are treated properly?\\
 The optimal way to analyze the data set so that all of the data is analyzed properly is to linearize the data set and then use a linear regression to find the relation between data points.
@@ -176,6 +176,8 @@ With the lights off, we could clearly see a ring of electrons illuminating the g
 \section{Data Analysis}
 %Data
 For this data analysis, we used a linear regression using Gaussian statistics, specifically Chi-Squared Minimization.
+For the linear regression, formed by the Chi-Squared Minimization, we obtained a slope, that is designated in these formulas as $a_0$.
+The value for $a_0=0.0173753$.
 
 %Figure
 \begin{figure}
@@ -186,18 +188,23 @@ For this data analysis, we used a linear regression using Gaussian statistics, s
 %e/m ratio from data
 To find the charge-to-mass ratio of the electrons, we simply use Equation \ref{pears}, along with the equation for the magnetic field, given by
 \begin{equation}
-	\va{B_0}=\frac{8\mu_0N}{\sqrt{125}a}
+	\va{B_0}=\frac{8\mu_0N}{\sqrt{125}a}=195.178 T
 \end{equation}
 where $\mu_0$, $N$, and $a$ are all constants given as $1.256637\frac{\mu m\cdot kg}{s^2A^2}$, 72, and $0.3317m$ respectively.
 We then plug this value of $B_0$ into
 \begin{equation}
-	\frac{e}{m}=\frac{2}{(a_0B_0)^2}
+	\frac{e}{m}=\frac{2}{(a_0B_0)^2}=1.73908\cdot10^{11}\frac{C}{kg}
 \end{equation}
-
 
 
 \section{Conclusion}
 % how does it compare to current science
+The current accepted charge-to-mass ratio of the electron is $1.758820\cdot10^{11}\frac{C}{kg}$, so the \% error is
+\begin{equation}
+	\frac{1.758820\cdot10^{11}}{1.73908\cdot10^{11}} -1=0.011308\%
+\end{equation}
+From this \% error we can see that the value we obtained in the lab is very close to the current accepted value for the charge-to-mass ratio of the electron. 
+The standard deviation I obtained from the data was $0.198$, so my values is within one, let alone two, standard deviations of the data. 
 
 \begin{thebibliography}{9}
 \bibitem{WingerBain} J. ~Winger, \textit{Bainbridge Tube Measurement of e/m}, (Mississippi State University).
