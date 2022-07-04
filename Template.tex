@@ -1,0 +1,68 @@
+\documentclass[aps,prl,twocolumn]{revtex4-2}
+% Please use this document class statement.  The prl option will help the formatting of your citations.
+
+\usepackage{graphicx}
+\newcommand{\etal}{\textit{et al.}}
+
+% The following code is placed in the preamble of your document allowing me to directly add corrections and comments to your file.
+
+\usepackage{xcolor}
+\usepackage{circledsteps}
+\newcommand{\Comment}[2]{\textcolor{red}{\CircledText{#1}#2}}
+\newcommand{\rtext}[2]{\textcolor{red}{\sout{#1} #2}}
+\usepackage{ulem}
+
+\begin{document}
+
+\title{Input title}
+
+% Here is the complete author list.  Be sure to move your name to be first if you are the submitting author.
+
+\author{D.~S.~Araya}
+\affiliation{Department of Physics and Astronomy, Mississippi State University, Mississippi State, MS 39762, USA}
+
+\author{B.~C.~Clark}
+\affiliation{Department of Physics and Astronomy, Mississippi State University, Mississippi State, MS 39762, USA}
+
+\author{K.~J.~Grimes}
+\affiliation{Department of Physics and Astronomy, Mississippi State University, Mississippi State, MS 39762, USA}
+
+\author{D.~C.~Heson}
+\affiliation{Department of Physics and Astronomy, Mississippi State University, Mississippi State, MS 39762, USA}
+
+\author{E.~L.~Lawson}
+\affiliation{Department of Physics and Astronomy, Mississippi State University, Mississippi State, MS 39762, USA}
+
+\author{J.~E.~Ratcliffe}
+\affiliation{Department of Physics and Astronomy, Mississippi State University, Mississippi State, MS 39762, USA}
+
+\author{C.~T.~Rochelle}
+\affiliation{Department of Physics and Astronomy, Mississippi State University, Mississippi State, MS 39762, USA}
+
+\author{M.~S.~Wright}
+\affiliation{Department of Physics and Astronomy, Mississippi State University, Mississippi State, MS 39762, USA}
+
+ \begin{abstract}
+Input abstract. \end{abstract}
+ \maketitle
+
+\section{Introduction}
+Your introduction.  Throughout the document do not forget to include citations.\cite{JJThomson}
+
+\section{Theory}
+Your theory section.
+
+\section{Experiment}
+A description of the experiment giving details.  You need to include a schematic of the device as well as details on how the measurement was made.
+
+\section{Data Analysis}
+Go over the analysis.  You should include plots of the data which will indicate the quality of the data.  The plot should include ``error bars'' and a fit line (not a trend line).  You should include tables of any values which are needed in the analysis but not represented by the information in the figures.
+
+\section{Conclusion}
+How does your result compare to the accepted value.  If you are within $2\sigma$ then the result is acceptable.
+
+\begin{thebibliography}{9}
+\bibitem{JJThomson} J.J. Thomson, Philosophical Magazine \textbf{44}, 293 (1897).
+\end{thebibliography}
+
+\end{document}
